@@ -12,3 +12,9 @@ packages/react-magma-dom/README.md
 *_cache*
 .npmrc
 packages/react-magma-landing/dist
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
