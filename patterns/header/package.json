@@ -11,7 +11,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16.18.1"
   },
   "scripts": {
     "build": "tsdx build",
@@ -19,27 +19,27 @@
     "lint": "eslint ./src"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.1.1",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
     "@types/uuid": "^8.3.0",
     "date-fns": "^2.12.0",
     "downshift": "^5.4.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-magma-dom": "^4.3.1-next.0",
-    "react-magma-icons": "^3.0.0",
+    "react-magma-icons": "/home/kobernyk/Documents/react-magma-icons",
     "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "@emotion/core": "^10.1.1",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
     "@types/uuid": "^8.3.0",
     "date-fns": "^2.16.1",
     "downshift": "^5.4.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-magma-dom": "^4.3.1-next.0",
-    "react-magma-icons": "^3.0.0",
+    "react-magma-icons": "/home/kobernyk/Documents/react-magma-icons",
     "uuid": "^8.3.0"
   },
   "name": "@cengage-patterns/header",

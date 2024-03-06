@@ -6,8 +6,8 @@ export const BasicTemplate = ({
   formFields,
 }: FormTemplateRenderProps) => {
   return (
-    <div>
+    <>
       {formFields}
-    </div>
+    </>
   );
 };

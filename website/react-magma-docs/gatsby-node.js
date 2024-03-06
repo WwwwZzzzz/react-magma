@@ -1,5 +1,5 @@
 const { createFilePath } = require('gatsby-source-filesystem');
-const propertiesJson = require('react-magma-dom/dist/properties.json');
+// const propertiesJson = require('react-magma-dom/dist/properties.json');
 
 exports.onCreateWebpackConfig = ({ actions, plugins }) => {
   actions.setWebpackConfig({
@@ -72,10 +72,10 @@ exports.onCreatePage = async ({
       ...page,
       context: {
         ...page.context,
-        properties: propertiesJson.filter(
-          property =>
-            frontmatter.props && frontmatter.props.includes(property.name)
-        ),
+        // properties: propertiesJson.filter(
+        //   property =>
+        //     frontmatter.props && frontmatter.props.includes(property.name)
+        // ),
       },
     });
   }

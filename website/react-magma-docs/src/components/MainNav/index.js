@@ -316,13 +316,13 @@ export const MainNav = ({ ...props }) => {
                   <Heading2>Introduction</Heading2>
                 </StyledLink>
 
-                <StyledLink
-                  activeStyle={activeStyle}
-                  aria-label="Contribution Guidelines"
-                  to="/contribution-guidelines/"
-                >
-                  <Heading2>Contribution Guidelines</Heading2>
-                </StyledLink>
+                {/*<StyledLink*/}
+                {/*  activeStyle={activeStyle}*/}
+                {/*  aria-label="Contribution Guidelines"*/}
+                {/*  to="/contribution-guidelines/"*/}
+                {/*>*/}
+                {/*  <Heading2>Contribution Guidelines</Heading2>*/}
+                {/*</StyledLink>*/}
 
                 <StyledHyperlink
                   aria-label="View project on GitHub"

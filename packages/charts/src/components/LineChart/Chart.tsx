@@ -5,7 +5,7 @@ import {
   ThemeContext,
   useDescendants,
 } from 'react-magma-dom';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { KeyboardIcon } from 'react-magma-icons';
 
 import { LineChart, LineChartProps } from './LineChart';
@@ -43,29 +43,30 @@ interface BaseChartProps {
    */
   type: string;
 }
+
 export interface ChartProps<T extends any>
   extends BaseChartProps,
     Omit<React.HTMLAttributes<HTMLDivElement>, 'title'>,
     LineChartProps<T> {}
 
 const StyledTitle = styled.span`
-  color: ${props => props.theme.colors.neutral};
-  font-size: ${props => props.theme.typeScale.size04.fontSize};
+  color: ${(props: any) => props.theme.colors.neutral};
+  font-size: ${(props: any) => props.theme.typeScale.size04.fontSize};
   font-weight: 600;
-  font-family: ${props => props.theme.bodyFont};
-  line-height: ${props => props.theme.typeScale.size04.lineHeight};
+  font-family: ${(props: any) => props.theme.bodyFont};
+  line-height: ${(props: any) => props.theme.typeScale.size04.lineHeight};
   margin: 0 0 12px 0;
 `;
 
 const StyledParagraph = styled(Paragraph)`
-  font-size: ${props => props.theme.typeScale.size02.fontSize};
+  font-size: ${(props: any) => props.theme.typeScale.size02.fontSize};
   margin: 0 0 18px 0;
 `;
 
 const StyledTabsContainer = styled(TabsContainer)`
   width: 800px;
   ul {
-    box-shadow: inset 0 -1px 0 ${props => props.theme.colors.neutral300};
+    box-shadow: inset 0 -1px 0 ${(props: any) => props.theme.colors.neutral300};
   }
 `;
 
@@ -79,21 +80,20 @@ const KeyboardInstructionsCard = styled(Card)<{
   width?: string;
 }>`
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  display: ${props => (props.isOpen ? 'block' : 'none')};
-  right: ${props => props.theme.spaceScale.spacing02};
-  max-height: ${props =>
+  display: ${(props: any) => (props.isOpen ? 'block' : 'none')};
+  right: ${(props: any) => props.theme.spaceScale.spacing02};
+  max-height: ${(props: any) =>
     props.maxHeight ? props.maxHeight : props.theme.dropdown.content.maxHeight};
-  opacity: ${props => (props.isOpen ? '1' : '0')};
+  opacity: ${(props: any) => (props.isOpen ? '1' : '0')};
   outline: 0;
   overflow-y: auto;
-  padding: ${props => props.theme.spaceScale.spacing05}
-    ${props => props.theme.spaceScale.spacing05};
+  padding: ${(props: any) => props.theme.spaceScale.spacing05} ${(props: { theme: { spaceScale: { spacing05: any; }; }; }) => props.theme.spaceScale.spacing05};
   position: absolute;
   transition: opacity 0.3s;
   white-space: nowrap;
   z-index: 2;
 
-  ${props =>
+  ${(props: any) =>
     props.width &&
     css`
       white-space: normal;

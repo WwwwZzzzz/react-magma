@@ -25,21 +25,20 @@
     "generate-properties": "node scripts/generateJSON.js",
     "copy-changelog": "node scripts/copy-changelog.js",
     "lint": "eslint ./src",
-    "prepublishOnly": "npm run copy-changelog",
-    "postbuild": "npm run generate-properties"
+    "prepublishOnly": "npm run copy-changelog"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "@emotion/core": "^10.1.1",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
     "date-fns": "^2.12.0",
     "downshift": "^5.4.5",
-    "framer-motion": "^4.1.11",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-magma-icons": "^3.0.0",
+    "framer-motion": "^10.18.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-magma-icons": "/home/kobernyk/Documents/react-magma-icons",
     "uuid": "^8.3.0"
   },
   "dependencies": {
@@ -49,16 +48,16 @@
     "react-popper": "^2.2.4"
   },
   "devDependencies": {
-    "@emotion/core": "^10.1.1",
-    "@emotion/styled": "^10.0.27",
-    "@emotion/styled-base": "^10.0.27",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@emotion/styled-base": "^11.0.0",
     "date-fns": "^2.16.1",
     "downshift": "^5.4.5",
-    "framer-motion": "^4.1.11",
+    "framer-motion": "^10.18.0",
     "mkdirp": "^1.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-magma-icons": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-magma-icons": "/home/kobernyk/Documents/react-magma-icons",
     "uuid": "^8.3.0"
   }
 }

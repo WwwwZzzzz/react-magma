@@ -3,7 +3,7 @@ import styled from '../../theme/styled';
 
 import { ThemeContext } from '../../theme/ThemeContext';
 import { ThemeInterface } from '../../theme/magma';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import {
   ButtonColor,
   ButtonSize,
