@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from '../../theme/styled';
 import { XOR } from '../../utils';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { transparentize } from 'polished';
 
 import { ThemeContext } from '../../theme/ThemeContext';

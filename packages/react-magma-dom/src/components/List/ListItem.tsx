@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from '../../theme/styled';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { getListDisplay, ListProps } from './';
 import { magma } from '../../theme/magma';
 import { ThemeContext } from '../../theme/ThemeContext';

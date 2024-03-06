@@ -17,7 +17,7 @@ module.exports = {
         'date-fns/locale',
         'downshift',
         'react-select',
-        '@emotion/core',
+        '@emotion/react',
         '@emotion/styled',
         '@emotion/styled-base',
         '@emotion/serialize',

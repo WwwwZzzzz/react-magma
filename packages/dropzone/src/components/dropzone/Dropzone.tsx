@@ -139,12 +139,12 @@ const Container = styled(Flex)<
     }
 >`
   flex-direction: column;
-  align-items: ${({ noDrag }) => (noDrag ? 'left' : 'center')};
-  justify-content: ${({ noDrag }) => (noDrag ? 'left' : 'center')};
-  text-align: ${({ noDrag }) => (noDrag ? 'left' : 'center')};
-  padding: ${({ noDrag }) => (noDrag ? '0px' : '24px')};
-  border-radius: ${({ noDrag }) => (noDrag ? '0px' : '4px')};
-  border: ${({ dragState = 'default', noDrag, theme, isInverse }) =>
+  align-items: ${({ noDrag }: any) => (noDrag ? 'left' : 'center')};
+  justify-content: ${({ noDrag }: any) => (noDrag ? 'left' : 'center')};
+  text-align: ${({ noDrag }: any) => (noDrag ? 'left' : 'center')};
+  padding: ${({ noDrag }: any) => (noDrag ? '0px' : '24px')};
+  border-radius: ${({ noDrag }: any) => (noDrag ? '0px' : '4px')};
+  border: ${({ dragState = 'default', noDrag, theme, isInverse }: any) =>
     noDrag
       ? `0px`
       : dragState === 'dragReject' || dragState === 'error'
@@ -159,18 +159,18 @@ const Container = styled(Flex)<
 
   border-style: ${({ dragState = 'default' }) =>
     dragState === 'error' ? 'solid' : 'dashed'};
-  background-color: ${({ theme, noDrag, isInverse }) =>
+  background-color: ${({ theme, noDrag, isInverse }: any) =>
     noDrag
       ? 'transparent'
       : isInverse
       ? transparentize(0.75, theme.colors.neutral900)
       : theme.colors.neutral200};
   outline: none;
-  transition: ${({ noDrag }) => `border ${noDrag ? 0 : '.24s'} ease-in-out`};
+  transition: ${({ noDrag }: any) => `border ${noDrag ? 0 : '.24s'} ease-in-out`};
 `;
 
 const HelperMessage = styled.span<{ isInverse?: boolean }>`
-  color: ${({ theme, isInverse }) =>
+  color: ${({ theme, isInverse }: any) =>
     isInverse ? theme.colors.neutral100 : theme.colors.neutral700};
   display: block;
   font-size: 14px;
@@ -178,13 +178,13 @@ const HelperMessage = styled.span<{ isInverse?: boolean }>`
 `;
 
 const Wrapper = styled.div<{ isInverse?: boolean }>`
-  color: ${({ theme, isInverse }) =>
+  color: ${({ theme, isInverse }: any) =>
     isInverse ? theme.colors.neutral100 : theme.colors.neutral700};
   margin: 0 0 24px 0;
-  font-size: ${({ theme }) => theme.typeScale.size02.fontSize};
-  line-height: ${({ theme }) => theme.typeScale.size02.lineHeight};
+  font-size: ${({ theme }: any) => theme.typeScale.size02.fontSize};
+  line-height: ${({ theme }: any) => theme.typeScale.size02.lineHeight};
   font-weight: 500;
-  padding: ${({ theme }) => theme.spaceScale.spacing01};
+  padding: ${({ theme }: any) => theme.spaceScale.spacing01};
 `;
 export const Dropzone = React.forwardRef<HTMLInputElement, DropzoneProps>(
   (props, ref) => {

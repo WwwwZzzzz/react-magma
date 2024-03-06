@@ -1,5 +1,5 @@
-const emotion = require('@emotion/core');
-const { createSerializer, matchers } = require('jest-emotion');
+const emotion = require('@emotion/react');
+const { createSerializer, matchers } = require('@emotion/jest');
 
 expect.addSnapshotSerializer(createSerializer(emotion));
 expect.extend(matchers);

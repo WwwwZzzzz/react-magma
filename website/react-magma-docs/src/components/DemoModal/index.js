@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Button, Modal } from 'react-magma-dom';
+import { Button, Modal, ModalSize } from 'react-magma-dom';
 
 export class DemoModal extends React.Component {
   constructor(props) {
@@ -41,5 +40,5 @@ export class DemoModal extends React.Component {
 }
 
 DemoModal.propTypes = {
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: ModalSize,
 };

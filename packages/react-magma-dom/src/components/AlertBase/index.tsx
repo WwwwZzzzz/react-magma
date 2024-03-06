@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import styled from '../../theme/styled';
 import isPropValid from '@emotion/is-prop-valid';
 import { transparentize } from 'polished';

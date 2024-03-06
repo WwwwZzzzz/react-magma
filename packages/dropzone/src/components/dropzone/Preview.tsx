@@ -47,7 +47,7 @@ export interface PreviewProps extends Omit<FlexProps, 'behavior'> {
 }
 
 const Thumb = styled.div<{ file: FilePreview }>`
-  background-image: ${({ file }) =>
+  background-image: ${({ file }: any) =>
     `url('${'preview' in file && file.preview}')`};
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,17 +76,17 @@ const IconStyles = {
 };
 
 const Errors = styled.div`
-  border-top: 1px solid ${({ theme }) => theme.colors.neutral300};
+  border-top: 1px solid ${({ theme }: any) => theme.colors.neutral300};
   padding: 16px;
-  font-size: ${({ theme }) => theme.typeScale.size02.fontSize};
-  line-height: ${({ theme }) => theme.typeScale.size02.lineHeight};
+  font-size: ${({ theme }: any) => theme.typeScale.size02.fontSize};
+  line-height: ${({ theme }: any) => theme.typeScale.size02.lineHeight};
 `;
 
 const StyledFlex = styled(Flex)`
   height: 56px;
   padding: 0 8px 0 16px;
-  font-size: ${({ theme }) => theme.typeScale.size02.fontSize};
-  line-height: ${({ theme }) => theme.typeScale.size02.lineHeight};
+  font-size: ${({ theme }: any) => theme.typeScale.size02.fontSize};
+  line-height: ${({ theme }: any) => theme.typeScale.size02.lineHeight};
 `;
 
 const FileName = styled(Flex)`
@@ -96,13 +96,13 @@ const FileName = styled(Flex)`
   text-overflow: ellipsis;
   display: block;
   margin-right: 24px;
-  font-size: ${({ theme }) => theme.typeScale.size02.fontSize};
-  line-height: ${({ theme }) => theme.typeScale.size02.lineHeight};
+  font-size: ${({ theme }: any) => theme.typeScale.size02.fontSize};
+  line-height: ${({ theme }: any) => theme.typeScale.size02.lineHeight};
 `;
 
 const StyledCard = styled(Card)<{ file: FilePreview; isInverse: boolean }>`
-  background-color: none;
-  border-color: ${({ file, theme, isInverse }) =>
+  background-color: transparent;
+  border-color: ${({ file, theme, isInverse }: any) =>
     file.errors
       ? isInverse
         ? theme.colors.danger200
